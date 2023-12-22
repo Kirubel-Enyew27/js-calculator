@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import { evaluate } from 'mathjs';  // Import the 'evaluate' function directly
 
 export default function Calculator() {
+
+
   const [dataValue, setDataValue] = useState({
     numberValue: [],
     stringValue: '',
@@ -88,3 +90,5 @@ export default function Calculator() {
     </div>
   );
 }
+
+
